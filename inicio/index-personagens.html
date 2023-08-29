@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/images/icones/icons8-pixel-16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythoria</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
+
+        body {
+            font-family: 'Handjet', cursive;
+            background-color: #1D1D39;
+
+        }
+
+
+        .info img {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            align-self: center;
+            margin: 3% 70px 0px 400px;
+
+        }
+
+        .personagens {
+            background-image: url("../images/icones/info\ personagens\ \(2\)\ \(1\).png");
+            font-size: large;
+            display: flex;
+            width: 400px;
+            background-repeat: no-repeat;
+            height: 712px;
+            justify-content: center;
+            margin:2% 0% 0% 20%;
+        }
+
+        .container-principal {
+            display: flex;
+            width: 73%;
+            margin-left: 7.6%;
+            margin-top: 9%;
+            height: fit-content;
+            flex-wrap: wrap;
+            gap: 7px 11px;
+            
+        }
+
+        .container-personagens {
+            width: 21%;
+        }
+
+        .container-personagens > img {
+            transition: 0.1s;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .container-personagens > img:hover {
+            box-shadow: 4px 2px 30px yellow;
+            
+        }
+
+        #info-container {
+            font-size: larger;
+            display: flex;
+            flex-direction: column;
+            background-image: url("../images/icones/historia\ \(3\).png");
+            display: fixed;
+            width: 400px;
+            height: 700px;
+            background-repeat: no-repeat;
+            margin: -37.2% 0% 0% 55%;
+            align-items: center;
+        }
+
+        #info {
+            display: flex;
+            margin: 5% 0% 0% 0%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #info>h1{
+            color: aliceblue;
+        }
+        #info>div{
+            width: 300px;
+            text-align: center;
+            color: white;
+        }
+
+
+
+        /*menu*/
+
+        p {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            position: fixed;
+            right: 3%;
+            bottom: 220px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #100a2da0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+
+            
+    .opcao1 {
+      background-color: rgba(2, 2, 15, 0.575);
+    }
+
+
+    .opcao2 {
+      background-color: rgba(2, 2, 15, 0.575);
+    }
+
+    .opcao3 {
+      background-color: rgba(2, 2, 15, 0.575);
+    }
+</style>
+        </head>
+        <body>
+
+            <ul>
+                <li class="opcao1"><a href="/inicio/index-inicio.html">Inicio</a></li>
+                <li class="opcao2"><a href="/inicio/index-icon.html">Icons</a></li>
+                <li class="opcao3"><a href="/inicio/index-personagens.html">Personagens</a></li>
+            </ul>
+
+
+            <div class="personagens">
+                <div class="container-principal">
+                        <div class="container-personagens"><img src="/images/icones/bixo.png" alt="" id="bixo"></div>
+                        <div class="container-personagens"><img src="/images/icones/corvo.png" alt="" id="corvo"></div>
+                        <div class="container-personagens"><img src="/images/icones/mago.png" alt="" id="mago"></div>
+                        <div class="container-personagens"><img src="/images/icones/sapo.png" alt="" id="sapo"></div>
+                        <div class="container-personagens"><img src="/images/icones/pewrsonagem1.png" alt="" id="cavaleiro"></div>
+                </div>
+            </div>
+
+        <section id="info-container">
+            <div id="info">
+                <h1 id="nome_personagem"></h1>
+                <div id="historia_personagem"></div>
+            </div>
+        </section>
+
+        </body>
+        <script src="personagens.js"></script>
+</html>
