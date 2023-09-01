@@ -19,45 +19,60 @@
             font-size: 30px;
         }
 
-        /*menu*/
-
-p{
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        ul {
-      list-style-type: none;
+/*menu*/
+    /* Reset de estilos para remover margens e preenchimentos padrão */
+    ul {
       margin: 0;
       padding: 0;
+    }
+
+    /* Estilize o menu horizontal */
+    #back-menu {
+        background-color: #1D1D39;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      /* Torna os itens de lista em uma linha horizontal */
+      padding: 10px;
+      
+      list-style-type: none;
+      margin: 0px 10px 0px 0px;
+      padding: 2px;
       overflow: hidden;
-      background-color: #100a2da0; 
+      background-color: #100a2da0;
     }
-    
+
     li {
-      float: left;
+        font-size: large;
+      margin: 3px;
+      padding: 5px;
     }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
+
+    /* Estilize os links do menu */
+    .botoes {
+        font-size: 18px;
       text-decoration: none;
+      color: #fff;
+      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      transition: background-color 0.3s;
     }
-    
-    
-    .opcao1 {
-      background-color: rgba(2, 2, 15, 0.575);
+
+    .botoes:hover {
+      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
     }
     </style>
 </head>
 
 <body>
-
+  <nav id="back-menu">
     <ul>
-        <li class="opcao1"><a href="/inicio/index-inicio.html">Inicio</a></li>
-        </ul>
+      <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+      <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+      <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+  </nav>
+
 
     <h1 style=" text-align: center; color: white;">Sua Missao chegou ao final</h1>
     <p style="font-size: 30 px; color: white; text-align: center;"> O destino desta Relíquia Perdida, que agora não esta mais perdida, esteve sobre suas mãos e sobre suas decições. <br> Suas escolhas ao longo da jornada, mostraram que você é um(a) herói(ína) lendário(a). <br>  Suas escolhas moldam a história da Reliquia, e seu <br>  legado será lembrado para sempre.</p>

@@ -72,43 +72,58 @@ img vida{
 
 
 /*menu*/
-
-p{
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        ul {
-      list-style-type: none;
+    /* Reset de estilos para remover margens e preenchimentos padrão */
+    ul {
       margin: 0;
       padding: 0;
+    }
+
+    /* Estilize o menu horizontal */
+    #back-menu {
+        background-color: #1D1D39;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      /* Torna os itens de lista em uma linha horizontal */
+      padding: 10px;
+      
+      list-style-type: none;
+      margin: 0px 10px 0px 0px;
+      padding: 2px;
       overflow: hidden;
-      background-color: #100a2da0; 
+      background-color: #100a2da0;
     }
-    
+
     li {
-      float: left;
+        font-size: large;
+      margin: 3px;
+      padding: 5px;
     }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
+
+    /* Estilize os links do menu */
+    .botoes {
+        font-size: 18px;
       text-decoration: none;
+      color: #fff;
+      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      transition: background-color 0.3s;
     }
-    
-    
-    .opcao1 {
-      background-color: rgba(2, 2, 15, 0.575);
+
+    .botoes:hover {
+      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
     }
     </style>
 </head>
 <body>
-
-    <ul>
-        <li class="opcao1"><a href="/inicio/index-inicio.html">Inicio</a></li>
-        </ul>
+    <nav id="back-menu">
+        <ul>
+          <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+          <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+          <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+      </nav>
+    
 
     <p style="font-size: 25px; color: white;text-align: center; position: fixed; right: 14%; bottom: 600px;">⚠️ Você encontra uma maça dourada!! os itens dourados são muito <br> valiosos e você pode trocar por dinheiro ou itens melhores ⚠️</p>
     <h1 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 25%; bottom: 500px;">Capítulo 5: Confronto Final</h1>

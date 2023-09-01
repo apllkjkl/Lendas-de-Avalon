@@ -1,70 +1,115 @@
 
-    <title>Mythoria-Cap1</title>
-    <style>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cap1-Mythoria</title> <style>
+        
         @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
 
 body {
     font-family: 'Handjet', cursive;
     background-color: #1D1D39;
     
+    
+}
+.card-vida{
+    background-image: url("../images/icones/historia\ \(3\).png");
+    background-repeat: no-repeat;
 }
 
-.card {
-    border-radius: 5px;
-    box-shadow: 10px 1px 13px 0px rgba(104, 194, 243, 0.22);
-    padding: 40px;
-    margin: 20px;
-    width: 390px;
-    transition: all 0.3s ease-out;
-}
 
-.card:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-.card p {
-    color: #fafbff;
-    font-size: 16px;
-}
-
-.card {
-    border-left: 3px solid #3b6eb5;
-    background-color: rgba(150, 148, 151, 0.338);
-}
 
 img vida{
     width: 70%;
     height: 100px;
 }
 
+.div2{
+    width: 100px;
+    height: 80px;
+}
 .card2 {
-    border-radius: 5px;
-    box-shadow: 10px 1px 13px 0px rgba(104, 194, 243, 0.22);
-    padding: 20px;
-    margin: 20px;
-    width: 390px;
-    transition: all 0.3s ease-out;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/icones/armamento.png");
+    background-repeat: no-repeat;
+    display: fixed;
+    width: 180px;
+    height: 50px;
+    background-repeat: no-repeat;
+    align-items: center;
+
+
 }
 
-.card2:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-}
 
-.card2 p {
-    color: #fafbff;
-    font-size: 16px;
-}
 
-.card2 {
-    border-left: 3px solid #3b6eb5;
-    background-color: rgba(150, 148, 151, 0.338);
-}
 
+/*menu*/
+    /* Reset de estilos para remover margens e preenchimentos padrão */
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilize o menu horizontal */
+    #back-menu {
+        background-color: #1D1D39;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      /* Torna os itens de lista em uma linha horizontal */
+      padding: 10px;
+      
+      list-style-type: none;
+      margin: 0px 10px 0px 0px;
+      padding: 2px;
+      overflow: hidden;
+      background-color: #100a2da0;
+    }
+
+    li {
+        font-size: large;
+      margin: 3px;
+      padding: 5px;
+    }
+
+    /* Estilize os links do menu */
+    .botoes {
+        font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      transition: background-color 0.3s;
+    }
+
+    .botoes:hover {
+      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
+    }
     </style>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+   
 </head>
 <body>
+    <nav id="back-menu">
+        <ul>
+          <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+          <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+          <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+      </nav>
+
+
+
     <h1 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 31%; bottom: 640px;">Mythoria</h1>
     <p style="font-size: 25px; color: white;text-align: center; position: fixed; right: 5%; bottom: 530px;">Nas terras de Mythoria, uma lendária profecia ecoava há séculos, falando de um herói <br> ou heroína destinado(a) a encontrar a Relíquia Perdida, um artefato poderoso capaz de trazer equilíbrio ou <br> destruição ao reino. Você é um(a) jovem aventureiro(a) cujo destino se <br> entrelaça com essa profecia.</p>
     <h2 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 20%; bottom: 420px;">Capítulo 1: O Começo da Jornada</h2>
@@ -72,31 +117,21 @@ img vida{
 
     <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 13%; bottom: 280px;" href="/Mythoria/index-cap2.html">Aceitar a missão do rei para encontrar a Relíquia e ganhar fama e fortuna.</a></p>
     <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 11%; bottom: 220px;"  href="/Mythoria/index-cap2.html">Estudar antes de aceitar a missao, pois é uma Reliquia Perdida e tem seus riscos.</a></p>
-    <div class="div1">
-        <div class="card">
-            <div class="img-vida">
-                <h1 style="color: #09172bb1;">Sua Vida</h1>
-           <img style="width: 250px;" src="/images/icones/coração-cheio.png" alt="Vida"> 
-           <img style="width: 250px;" src="/images/icones/poção-cheia.png" alt="Poção">
-           <h1 style="color: #09172bb1;">Alimentos</h1>
-          
+    <div class="card1">
+            <div class="card-vida">
+         
+            </div>
+    </div>
  
            <div class="card-alimento">
-        <img id="Alimentos"  src="/images/icones/icons8-batata-48.png" alt="Batata">
-        <img id="Alimentos" src="/images/icones/icons8-bife-48.png" alt="Bife">
-        <img id="Alimentos" src="/images/icones/icons8-pão-48.png" alt="Pão">
-        <img src="/images/icones/icons8-blueberry-48.png" alt="Blueberry">
-        <img src="/images/icones/icons8-peixe-inteiro-48.png" alt="Peixe">
-        <img src="/images/icones/icons8-torta-48.png" alt="Torta">
+ 
         </div>
             
-    </div>
-    </div>
+  
 
     <div class="div2">
         <div class="card2">
-            <h2 style="color: #09172bb1;">Armamento</h2>
-            <img src="/images/icones/icons8-espada-de-minecraft-48.png" alt="Espada">
+            
 
     </div>
 
