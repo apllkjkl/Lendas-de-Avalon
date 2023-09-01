@@ -46,29 +46,54 @@
     }
     
 
-        .opcao1 {
-      background-color: rgba(2, 2, 15, 0.575);
-    }
-    
-   
-    .opcao2 {
-        background-color: rgba(2, 2, 15, 0.575);
+    /*menu*/
+    /* Reset de estilos para remover margens e preenchimentos padrão */
+    ul {
+      margin: 0;
+      padding: 0;
     }
 
-    .opcao3 {
-        background-color: rgba(2, 2, 15, 0.575);
+    /* Estilize o menu horizontal */
+    nav {
+      background-color: #333;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      /* Torna os itens de lista em uma linha horizontal */
+      padding: 1px;
+    }
+
+    li {
+      margin: 0px;
+      padding: 5px;
+    }
+
+    /* Estilize os links do menu */
+    .botoes {
+      text-decoration: none;
+      color: #fff;
+      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      transition: background-color 0.3s;
+    }
+
+    .botoes:hover {
+      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
     }
     </style>
 </head>
 
 <body>
 
-    <ul>
-        <li class="opcao1"><a href="/inicio/index-inicio.html">Inicio</a></li>
-          <li class="opcao2"><a href="/inicio/index-icon.html">Icons</a></li>
-          <li class="opcao3"><a href="/inicio/index-personagens.html">Personagens</a></li>
-        </ul>
-      
+   <nav>
+    
+      <ul>
+        <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+        <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+        <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+    
+   </nav>
 
 
         <p style="color: white;">Bem-vindos, nobres aventureiros, à terra encantada de fantasias e mistérios medievais! <br> Aqui, a coragem e a imaginação são nossas melhores armas, e as páginas da história <br> estão prestes a ganhar vida diante de seus olhos. <br> <br> <br>Lembrem-se, bravos heróis, que a força reside em seus corações, e a verdadeira riqueza está nas amizades <br> forjadas ao longo da caminhada. Unidos, enfrentaremos perigos e desafios, e através do trabalho em equipe, alcançaremos a glória.

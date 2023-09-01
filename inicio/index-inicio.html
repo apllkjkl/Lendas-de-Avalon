@@ -24,28 +24,12 @@
     p {
       text-align: center;
       margin-top: 60px;
-    }
-
-
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 35%
-    }
-
-    p {
-      text-align: center;
-      margin-top: 60px;
-      color: white;
-      font-size: 20px;
-    }
-    a{
       color: white;
       font-size: 20px;
     }
 
-    ul {
+
+    #ul-botoes{
 
       list-style-type: none;
       margin: 0px 10px 0px 0px;
@@ -58,34 +42,67 @@
       float: left;
     }
 
-    .opcao1 {
-      background-color: rgba(2, 2, 15, 0.575);
-      ;
+
+    a {
+      font-size: 20px;
+      color: white;
     }
 
 
-    .opcao2 {
-      background-color: rgba(2, 2, 15, 0.575);
+   /*menu*/
+    /* Reset de estilos para remover margens e preenchimentos padrão */
+    ul {
+      margin: 0;
+      padding: 0;
     }
 
-    .opcao3 {
-      background-color: rgba(2, 2, 15, 0.575);
+    /* Estilize o menu horizontal */
+    nav {
+        background-color: #1D1D39;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      /* Torna os itens de lista em uma linha horizontal */
+      padding: 10px;
+    }
+
+    li {
+      font-size: large;
+      margin: 3px;
+      padding: 5px;
+    }
+
+    /* Estilize os links do menu */
+    .botoes {
+      text-decoration: none;
+      color: #fff;
+      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      transition: background-color 0.3s;
+    }
+
+    .botoes:hover {
+      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
     }
   </style>
 </head>
 
 <body>
 
+  
+  <nav id="back-menu">
+    <ul id="ul-botoes">
+      <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+      <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+      <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+  </nav>
 
-  <ul>
-    <li class="opcao1"><a href="/inicio/index-inicio.html">Inicio</a></li>
-    <li class="opcao2"><a href="/inicio/index-icon.html">Icons</a></li>
-    <li class="opcao3"><a href="/inicio/index-personagens.html">Personagens</a></li>
-  </ul>
+
+  
 
   <img src="/images/icones/avalon.png" alt="">
-  <p style="font-size: 20px; color: white;">Press the <a style="text-align: center; color: white;"
-      href="/inicio/index-Boas vindas.html">Start</a></p>
+  <p>Press the <a id="start" href="/inicio/index-Boas vindas.html">Start</a></p>
 
 
 
