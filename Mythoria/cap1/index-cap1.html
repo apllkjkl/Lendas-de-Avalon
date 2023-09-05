@@ -2,8 +2,7 @@
     <!DOCTYPE html>
     <html lang="pt-br">
     <head>
-        
-        <meta charset="UTF-8">
+      <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cap1-Mythoria</title> <style>
         
@@ -16,16 +15,23 @@ body {
     
 }
 .card-vida{
-    background-image: url("../images/icones/historia\ \(3\).png");
-    background-repeat: no-repeat;
+  background-image: url("/images/icones/historia\ \(3\).png");
+  background-repeat: no-repeat;
+    font-size: xx-large;
+    
+    position: absolute;
+    width: 500px;
+    height: 700px;
 }
-
-
-
-img vida{
-    width: 70%;
+.card-arma{
+  background-image: url("/images/icones/armamento.png");
+  background-repeat: no-repeat;
+    font-size: xx-large;
+    position: absolute;
+    width: 100px;
     height: 100px;
 }
+
 
 .div2{
     width: 100px;
@@ -44,6 +50,12 @@ img vida{
     align-items: center;
 
 
+}
+.card-vida>img{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 
@@ -93,14 +105,11 @@ img vida{
       background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
     }
     </style>
-    </head>
-    <body>
-        
-    </body>
-    </html>
+
    
 </head>
 <body>
+
     <nav id="back-menu">
         <ul>
           <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
@@ -115,26 +124,26 @@ img vida{
     <h2 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 20%; bottom: 420px;">Capítulo 1: O Começo da Jornada</h2>
     <p style="font-size: 25px; color: white;text-align: center; position: fixed; right: 5%; bottom: 340px;">Você acorda na pequena vila de Verdenwood, onde os aldeões contam histórias sobre a Relíquia Perdida. <br> Logo, você se depara com dois caminhos para começar sua busca:</p>
 
-    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 13%; bottom: 280px;" href="/Mythoria/index-cap2.html">Aceitar a missão do rei para encontrar a Relíquia e ganhar fama e fortuna.</a></p>
-    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 11%; bottom: 220px;"  href="/Mythoria/index-cap2.html">Estudar antes de aceitar a missao, pois é uma Reliquia Perdida e tem seus riscos.</a></p>
+    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 13%; bottom: 280px;" href="/Mythoria/cap2-mestres/index-cap2.html">Aceitar a missão do rei para encontrar a Relíquia e ganhar fama e fortuna.</a></p>
+    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 11%; bottom: 220px;"  href="/Mythoria/cap2-mestres/index-cap2.html">Estudar antes de aceitar a missao, pois é uma Reliquia Perdida e tem seus riscos.</a></p>
     <div class="card1">
             <div class="card-vida">
          
             </div>
     </div>
- 
-           <div class="card-alimento">
- 
-        </div>
-            
-  
 
-    <div class="div2">
-        <div class="card2">
-            
-
+    <div class="card-vida">
+      <img src="/images/icones/coração-cheio.png" alt="">
+      <img src="/images/icones/poção-cheia.png" alt="">
     </div>
 
+    <div class="card-armas">
+      <p>opa</p>
+    </div>
+ 
+          
         
 </div>
 </body>
+
+    </html>
