@@ -1,67 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-      <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cap1-Mythoria</title> <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cap1-Mythoria</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
 
-body {
-    font-family: 'Handjet', cursive;
-    background-color: #1D1D39;
-    
-    
-}
-.card-vida{
-  background-image: url("/images/icones/historia\ \(3\).png");
-  background-repeat: no-repeat;
-    font-size: xx-large;
-    
-    position: absolute;
-    width: 500px;
-    height: 700px;
-}
-.card-arma{
-  background-image: url("/images/icones/armamento.png");
-  background-repeat: no-repeat;
-    font-size: xx-large;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-}
+    body {
+      font-family: 'Handjet', cursive;
+      background-color: #1D1D39;
+    }
+
+    /*texto*/
+    .historia {
+      font-size: 25px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .historia a {
+      color: rgb(182, 176, 176);
+    }
 
 
-.div2{
-    width: 100px;
-    height: 80px;
-}
-.card2 {
-    font-size: larger;
-    display: flex;
-    flex-direction: column;
-    background-image: url("../images/icones/armamento.png");
-    background-repeat: no-repeat;
-    display: fixed;
-    width: 180px;
-    height: 50px;
-    background-repeat: no-repeat;
-    align-items: center;
+    /*cards*/
+    .card-vida {
+      background-image: url("/images/icones/historia\ \(3\).png");
+      background-repeat: no-repeat;
+      font-size: xx-large;
+
+      position: absolute;
+      width: 500px;
+      height: 700px;
+    }
+
+    .card-arma {
+      background-image: url("/images/icones/armamento.png");
+      background-repeat: no-repeat;
+      font-size: xx-large;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
 
 
-}
-.card-vida>img{
-  width: 230px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-}
+    .div2 {
+      width: 100px;
+      height: 80px;
+    }
+
+    .card2 {
+      font-size: larger;
+      display: flex;
+      flex-direction: column;
+      background-image: url("../images/icones/armamento.png");
+      background-repeat: no-repeat;
+      display: fixed;
+      width: 180px;
+      height: 50px;
+      background-repeat: no-repeat;
+      align-items: center;
+
+
+    }
+
+    .card-vida>img {
+      width: 230px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
 
 
 
 
-/*menu*/
+    /*menu*/
     /* Reset de estilos para remover margens e preenchimentos padrão */
     ul {
       margin: 0;
@@ -70,7 +87,7 @@ body {
 
     /* Estilize o menu horizontal */
     #back-menu {
-        background-color: #1D1D39;
+      background-color: #1D1D39;
     }
 
     ul {
@@ -78,7 +95,7 @@ body {
       display: flex;
       /* Torna os itens de lista em uma linha horizontal */
       padding: 10px;
-      
+
       list-style-type: none;
       margin: 0px 10px 0px 0px;
       padding: 2px;
@@ -87,63 +104,56 @@ body {
     }
 
     li {
-        font-size: large;
+      font-size: large;
       margin: 3px;
       padding: 5px;
     }
 
     /* Estilize os links do menu */
     .botoes {
-        font-size: 18px;
+      font-size: 18px;
       text-decoration: none;
       color: #fff;
-      padding: 0px 30px;/* Espaçamento dentro de cada item do menu */
+      padding: 0px 30px;
+      /* Espaçamento dentro de cada item do menu */
       transition: background-color 0.3s;
     }
 
     .botoes:hover {
-      background-color: #181233;/* Cor de fundo quando o mouse passa por cima */
+      background-color: #181233;
+      /* Cor de fundo quando o mouse passa por cima */
     }
-    </style>
+  </style>
 
-   
+
 </head>
+
 <body>
 
-    <nav id="back-menu">
-        <ul>
-          <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
-          <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
-          <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
-      </nav>
+  <nav id="back-menu">
+    <ul>
+      <li><a class="botoes" href="/inicio/index-inicio.html">Inicio</a></li>
+      <li><a class="botoes" href="/inicio/index-icon.html">Icons</a></li>
+      <li><a class="botoes" href="/inicio/index-personagens.html">Personagens</a></li>
+  </nav>
+
+
+  <div class="historia">
+    <h1>Mythoria</h1>
+    <p>Nas terras de Mythoria, uma lendária profecia ecoava há séculos, falando de um herói <br> ou
+      heroína destinado(a) a encontrar a Relíquia Perdida, um artefato poderoso capaz de trazer equilíbrio ou <br>
+      destruição ao reino. Você é um(a) jovem aventureiro(a) cujo destino se <br> entrelaça com essa profecia.</p>
+    <h2>Capítulo 1: O Começo da Jornada</h2>
+    <p>Você acorda na pequena vila de Verdenwood, onde os aldeões contam histórias sobre a Relíquia Perdida. <br> Logo,
+      você se depara com dois caminhos para começar sua busca:</p>
+    <p><a href="/Mythoria/cap2-mestres/index-cap2.html">Aceitar a missão do rei para encontrar a Relíquia e ganhar fama
+        e fortuna.</a></p>
+    <p><a href="/Mythoria/cap2-mestres/index-cap2.html">Estudar antes de aceitar a missao, pois é uma Reliquia Perdida e
+        tem seus riscos.</a></p>
+  </div>
 
 
 
-    <h1 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 31%; bottom: 640px;">Mythoria</h1>
-    <p style="font-size: 25px; color: white;text-align: center; position: fixed; right: 5%; bottom: 530px;">Nas terras de Mythoria, uma lendária profecia ecoava há séculos, falando de um herói <br> ou heroína destinado(a) a encontrar a Relíquia Perdida, um artefato poderoso capaz de trazer equilíbrio ou <br> destruição ao reino. Você é um(a) jovem aventureiro(a) cujo destino se <br> entrelaça com essa profecia.</p>
-    <h2 style="font-size: 35px; color: white;text-align: center; position: fixed; right: 20%; bottom: 420px;">Capítulo 1: O Começo da Jornada</h2>
-    <p style="font-size: 25px; color: white;text-align: center; position: fixed; right: 5%; bottom: 340px;">Você acorda na pequena vila de Verdenwood, onde os aldeões contam histórias sobre a Relíquia Perdida. <br> Logo, você se depara com dois caminhos para começar sua busca:</p>
-
-    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 13%; bottom: 280px;" href="/Mythoria/cap2-mestres/index-cap2.html">Aceitar a missão do rei para encontrar a Relíquia e ganhar fama e fortuna.</a></p>
-    <p><a style=" font-size: 25px; color: white;text-align: center; position: fixed; right: 11%; bottom: 220px;"  href="/Mythoria/cap2-mestres/index-cap2.html">Estudar antes de aceitar a missao, pois é uma Reliquia Perdida e tem seus riscos.</a></p>
-    <div class="card1">
-            <div class="card-vida">
-         
-            </div>
-    </div>
-
-    <div class="card-vida">
-      <img src="/images/icones/coração-cheio.png" alt="">
-      <img src="/images/icones/poção-cheia.png" alt="">
-    </div>
-
-    <div class="card-armas">
-      <p>opa</p>
-    </div>
- 
-          
-        
-</div>
 </body>
 
-    </html>
+</html>
